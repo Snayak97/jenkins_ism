@@ -35,15 +35,15 @@ services:
   # Flask Backend
   backend:
     build:
-      context: ./backend
+      context: ./Backend
       dockerfile: Dockerfile
     container_name: flask-backend
     ports:
       - "5000:5000"
     volumes:
-      - ./backend:/app
+      - ./Backend:/app
     env_file:
-      - ./backend/.env
+      - ./Backend/.env
     environment:
       DATABASE_URL: postgresql://postgres:Soumya1997@db:5432/Flask_App2
       REDIS_HOST: redis

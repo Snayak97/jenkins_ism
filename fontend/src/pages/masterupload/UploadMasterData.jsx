@@ -13,7 +13,8 @@ import {
   ListItemText,
 } from "@mui/material";
 import AllDataTables from "./AllDataTables";
-import MasterAllData from "../Masteralldata/MasterAllData";
+import MasterAllData from "../masterdata/MasterAllData";
+
 
 const UploadMasterData = () => {
   const fileInputRef = useRef(null);

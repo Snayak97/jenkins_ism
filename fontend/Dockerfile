@@ -9,7 +9,7 @@ COPY package*.json ./
 RUN npm install
 
 # Copy the rest of the application
-COPY . .
+COPY fontend/. ./
 
 # Expose Vite dev server port
 EXPOSE 5173

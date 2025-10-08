@@ -42,8 +42,8 @@ services:
       - "5000:5000"
     volumes:
       - ./Backend:/myapp
-      - /myapp/venv              
-      - /myapp/__pycache__ 
+      # - /myapp/venv              
+      # - /myapp/__pycache__ 
     env_file:
       - ./Backend/.env
     environment:
@@ -68,7 +68,7 @@ services:
       - "5173:5173"
     volumes:
       - ./fontend:/mywebapp
-      - /mywebapp/node_modules
+      # - /mywebapp/node_modules
     # environment:
     #   VITE_BACKEND_URL: http://127.0.0.1:5000/api/v1
     depends_on:

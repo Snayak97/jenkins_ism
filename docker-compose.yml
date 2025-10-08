@@ -40,8 +40,8 @@ services:
     container_name: flask-backend
     ports:
       - "5000:5000"
-    volumes:
-      - ./Backend:/myapp
+    # volumes:
+    #   - ./Backend:/myapp
       # - /myapp/venv              
       # - /myapp/__pycache__ 
     env_file:
@@ -66,8 +66,8 @@ services:
     container_name: ismsoft-frontend
     ports:
       - "5173:5173"
-    volumes:
-      - ./fontend:/mywebapp
+    # volumes:
+    #   - ./fontend:/mywebapp
       # - /mywebapp/node_modules
     # environment:
     #   VITE_BACKEND_URL: http://127.0.0.1:5000/api/v1

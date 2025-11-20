@@ -83,6 +83,7 @@ def resend_verification():
             return jsonify({"error": "Email is required"}), 400
 
         user = UserService.verify_user_email(email)
+
         if not user:
             return jsonify({"error": "User not found"}), 404
 

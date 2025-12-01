@@ -4,7 +4,7 @@ import RecoveryPasswords from "./RecoveryPasswords";
 
 
 
-const PasswordSections = ({  }) => {
+const PasswordSections = () => {
   
 
   return (
